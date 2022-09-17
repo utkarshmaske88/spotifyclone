@@ -28,7 +28,7 @@
 
         <!-- NAVBAR STARTED -->
         <div class="navbar">
-  <div class="upsidenav">
+            <div class="upsidenav">
                 <div class="brand"><img src="logo.png" alt="spotify">Spotify</div>
              
                     <div class="nav1content"> <span class="material-symbols-outlined"> home</span> &nbsp Home</div>
@@ -39,10 +39,11 @@
                    <div class="playlist"> <span class="material-icons">queue</span>&nbspCreate Playlist</div>
                    <div class="playlist"> <span class="material-icons">recommend</span>&nbspLiked Songs</div>
          
-                </div>
-                <div class="download"><span class="material-icons">download_for_offline</span>&nbspInstall App</div>
+            </div>
+            <div class="download"><span class="material-icons">download_for_offline</span>&nbspInstall App</div>
         
         </div>
+   
         <!-- NAVBAR ENDED -->
 
 
@@ -63,17 +64,13 @@
 
             <div class="recent">
                 <!-- <div class="first" id="first"><img src="./songs/s1.png"> </div> -->
-                <div class="firstsong"><img src="./songs/s1.png">Siddhu Moosewala-Hip Te Hop</div>
-                <div class="firstsong"><img src="./songs/s2.png">Trending Now India</div>
-                <div class="firstsong"><img src="./songs/s3.png">Vikram JukeBox</div>
-                <div class="firstsong"><img src="./songs/s4.png">Arjit Singh Mix</div>
-                <div class="firstsong"><img src="./songs/s5.png">How Mahrashtra Politics Is Changing?</div>
-                <div class="firstsong"><img src="./songs/s6.png">Punjabi 101 Hits</div>
-                <!-- <div class="first" id="first"><img src="./songs/s2.png"> </div>
-                <div class="first" id="first"><img src="./songs/s3.png"> </div>
-                <div class="first" id="first"><img src="./songs/s4.png"> </div>
-                <div class="first" id="first"><img src="./songs/s5.png"> </div>
-                <div class="first" id="first"><img src="./songs/s7.png"> </div> -->
+                <div class="firstsong" id="1song"><img src="./songs/s1.png">Siddhu Moosewala-Hip Te Hop</div>
+                <div class="firstsong" id="2song"><img src="./songs/s2.png">Trending Now India</div>
+                <div class="firstsong" id="3song"><img src="./songs/s3.png">Vikram JukeBox</div>
+                <div class="firstsong" id="4song"><img src="./songs/s4.png">Arjit Singh Mix</div>
+                <div class="firstsong" id="5song"><img src="./songs/s5.png">How Mahrashtra Politics Is Changing?</div>
+                <div class="firstsong" id="6song"><img src="./songs/s6.png">Punjabi 101 Hits</div>
+
             </div>
 
             <div class="message" id="podcastm">Podcasts</div>
@@ -102,15 +99,32 @@
         <!-- HERO SECTION ENDS -->
 
 
+
+        <!-- AUDIO SECTION STARTS -->
+
+         <div class="audio">
+         <audio id="a" src="./audio/295.m4a"></audio>
+         <audio id="b" src="./audio/Deva Deva - Brahmāstra Amitabh B Ranbir Kapoor Alia Bhatt Pritam Arijit Amitabh Jonita [TubeRipper.com].m4a"></audio>
+         <audio id="c" src="./audio/Kesariya - Brahmāstra Ranbir Kapoor Alia Bhatt Pritam Arijit Singh Amitabh Bhattacharya [TubeRipper.com].m4a"></audio>
+         <audio id="d"src="./audio/SUMMER HIGH - AP DHILLON [TubeRipper.com].m4a"></audio>
+         <audio id="e" src="./audio/The Truth about Freebie Politics Right or Wrong Dhruv Rathee [TubeRipper.com]_2.m4a"></audio>
+         <audio id="f" src="./audio/VIKRAM Title Track Lyric Kamal Haasan Vijay Sethupathi Lokesh Kanagaraj Anirudh [TubeRipper.com].m4a"></audio>
+         </div>
+
+         <!-- AUDIO SECTION ENDS -->
+
+
+
+
         <!-- play SECTION starts -->
 
 
         <div class="play">
             <div class="leftplay">
-                <img src="playimg.png" alt="playimg">
+                <img id="playingimg" src="./playimg.png" alt="playimg">
                 <div class="artists">
-                    <div class="songname">Non-Copyright Songs</div>
-                    <div class="artist">unknown</div>
+                    <div class="songname" id="songname">Non-Copyright Songs</div>
+                    <div class="artist" id="artist">unknown</div>
                 </div>
                 <span class="material-icons" id="ixon">favorite</span>
                 <span class="material-icons" id="ixon">photo_size_select_small</span>
@@ -118,15 +132,16 @@
 
             <div class="mainplay">
                 <div class="up"> <span class="material-icons">shuffle </span>
-                    <span class="material-icons"> skip_previous</span>
-                    <div class="play1"> <span class="material-icons"> play_circle_filled</span></div>
-                    <span class="material-icons"> skip_next </span>
-                    <span class="material-icons">replay</span>
+                    <span class="material-icons" id="skipp"> skip_previous</span>
+                    <div class="play1"> <span class="material-icons" id="play2">play_circle_filled</span></div>
+                    <span class="material-icons" id="skipn"> skip_next </span>
+                    <span class="material-icons" id="replay">replay</span>
                 </div>
-                <div class="down">
-                    <img src="./playbar.png" alt="playbar">
+                <div class="down" id="down">
+                    <div id="box"></div>
                 </div>
             </div>
+
             <div class="rightplay">
                 <span class="material-icons">article</span>
                 <span class="material-icons">graphic_eq</span>
@@ -134,7 +149,7 @@
                 <img src="./volume.png" alt="volume">
             </div>
 
-
+        </div>
 
             <!-- play SECTION ends -->
             <script src="app.js"></script>
